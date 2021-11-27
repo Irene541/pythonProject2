@@ -1,0 +1,12 @@
+def sort(numbers):
+    for x in range(len(numbers)-1,0,-1):
+        for y in range(x):
+
+            if numbers[y]>numbers[y+1]:
+                temp = numbers[y]
+                numbers[y] = numbers[y+1]
+                numbers[y+1] = temp
+numbers = [1,65,78,23,56,7,5]
+sort(numbers)
+print(numbers)
+
